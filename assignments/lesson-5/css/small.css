@@ -4,17 +4,20 @@
 
 body {
   font-size: 16px;
+  font-family: "Lato", Arial, sans-serif;
   /* Declare the base font-family - from google font api or other */
 }
 
-header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
+header, nav, main, footer { 
+	max-width: 40em;
+	/* the comma means apply the following CSS declarations to all of the listed elements */
   /* Declare the maximum width and other main element rules to limit the stretch on wide views */
 }
 
 header {}
 header h1 {}
 header img {}
-header .subheading {}
+header.subheading {}
 
 nav {}
 nav button {}
@@ -30,10 +33,14 @@ main figure { margin: 0 0 .2rem 2%; width:96%; }
 main figure img { width: 100%; }
 
 section {}
+section.forecast {
+	display: none;
+}
 
 article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
-  width: ???; /* fill the page in the small/phone view */
-  margin: ???;
+  width: 90%; /* fill the page in the small/phone view */
+  margin: auto;
+  display: block;
 }
 
 footer {}

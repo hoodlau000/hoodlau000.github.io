@@ -33,8 +33,12 @@
       </ul>		
     </nav>
     <main>
-      <figure>
-        <img src="images/franklin-large100.jpg" alt="A landscape picture of the city of Franklin">
+      <figure class="franklin-photo">
+        <img src="images/franklin-large100.jpg" alt="A landscape picture of the city of Franklin" sizes = "100vw"
+        srcset="images/franklin-small50.jpg 500w,
+        images/franklin-medium80.jpg 800w,
+        images/franklin-large100.jpg 1100w"
+       >
       </figure>
       <h2>Franklin</h2>
       <section>
@@ -90,7 +94,10 @@
       <article>
         <h3>Franklin Breaks Record</h3>	
         <p class="town-article">
-          <img src="images/town-large100.jpg" alt="Photo of the streets of Franklin, displays several shops" width="600">
+          <img src="images/town-large100.jpg" alt="Photo of the streets of Franklin, displays several shops" sizes="50vw"
+          srcset="images/town-small50.jpg 100w,
+          images/town-medium80.jpg 500w,
+          images/town-large100.jpg 800w">
           short article content placeholder
         </p>
   		</article>		  

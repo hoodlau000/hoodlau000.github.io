@@ -22,7 +22,7 @@
   	display: block;
   }  /* show the 10-day forecast with the medium view and up */  
   article p.town-article img {
-  	width: 70%;
+  	width: 60%;
   	float:right; 
  	}  /* responsive images */
 }

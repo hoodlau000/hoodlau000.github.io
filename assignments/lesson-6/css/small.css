@@ -9,7 +9,7 @@ body {
 }
 
 header, nav, main, footer { 
-	max-width: 960px;
+	max-width: 900px;
   margin: auto;
 	/* the comma means apply the following CSS declarations to all of the listed elements */
   /* Declare the maximum width and other main element rules to limit the stretch on wide views */
@@ -22,18 +22,39 @@ header h1 {
 header img {}
 header.subheading {}
 
-nav {}
-nav button {}
+nav {
+  background-color: #567BB5;
+}
+nav button.hamburger {
+  display: block;
+  position: absolute;
+}
+.navigation {
+  list-style: none;
+  padding-left: 0;
+}
+.navigation li {
+  display: none;
+}
+.navigation.responsive {
+  position: relative;
+}
+.navigation.responsive li a {
+  display: block;
+}
 nav ul {}
 nav ul li {}
-nav ul li a {}
+nav ul li a {
+  color: white;
+}
 nav ul li.active a {}
 nav ul li a:hover {}
 
 main {}
 main h2 {}
 main figure { margin: 0 0 .2rem 2%; width:96%; }
-main figure img { width: 100%; }
+main figure img { width: 100%;
+}
 
 section {}
 section.forecast {

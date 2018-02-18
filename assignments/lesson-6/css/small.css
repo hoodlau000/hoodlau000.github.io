@@ -15,7 +15,9 @@ header, nav, main, footer {
 }
 
 header {}
-header h1 {}
+header h1 {
+  font-family: "Playfair Display", Palatino, serif;
+}
 header img {}
 header.subheading {}
 

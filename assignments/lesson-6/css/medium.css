@@ -3,7 +3,10 @@
   nav button.hamburger {
   	display:none; 
   }  /* hamburger button does not need to be shown */
-  .navigation li {
+  #primaryNav li {
+    display: block;
+  }
+  nav ul.hide {
     display: block;
   }
   ul {

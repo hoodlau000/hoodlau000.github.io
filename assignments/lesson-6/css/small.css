@@ -27,20 +27,27 @@ nav {
 }
 nav button.hamburger {
   display: block;
-  position: absolute;
+  position: relative;
+  border: none;
+  background-color: transparent;
+  color: white;
 }
-.navigation {
+#primaryNav {
   list-style: none;
   padding-left: 0;
+  text-decoration: none;
 }
-.navigation li {
-  display: none;
+#primaryNav li {
+  display: block;
 }
-.navigation.responsive {
+#primaryNav.hide {
   position: relative;
 }
-.navigation.responsive li a {
+#primaryNav.hide li a {
   display: block;
+}
+nav ul.hide {
+  display: none;
 }
 nav ul {}
 nav ul li {}

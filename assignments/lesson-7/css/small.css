@@ -62,6 +62,10 @@ main h2 {}
 main figure { margin: 0 0 .2rem 2%; width:96%; }
 main figure img { width: 100%;
 }
+main section.gallery div {
+  display: grid;
+  grid-template-columns: 1fr;
+}
 
 section {}
 section.forecast {

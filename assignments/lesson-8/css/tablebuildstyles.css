@@ -2,10 +2,12 @@ body {
 	font-family: Ubuntu, Arial, sans-serif;
 	max-width: 900px;
 	margin: auto;
+	margin-top: 20px;
 }
 table {
 	width: 300px;
 	margin: auto;
+	box-shadow: 10px 10px 20px grey;
 }
 table, th, td {
 	border: 1px solid darkgrey;

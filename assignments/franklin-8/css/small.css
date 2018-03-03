@@ -1,0 +1,85 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+  font-size: 16px;
+  font-family: "Lato", Arial, sans-serif;
+  /* Declare the base font-family - from google font api or other */
+}
+
+header, nav, main, footer { 
+	max-width: 900px;
+  margin: auto;
+	/* the comma means apply the following CSS declarations to all of the listed elements */
+  /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+}
+
+header {}
+header h1 {
+  font-family: "Playfair Display", Palatino, serif;
+}
+header img {}
+header.subheading {}
+
+nav {
+  background-color: #567BB5;
+}
+nav button.hamburger {
+  display: block;
+  position: relative;
+  border: none;
+  background-color: transparent;
+  color: white;
+}
+#primaryNav {
+  list-style: none;
+  padding-left: 0;
+  text-decoration: none;
+}
+#primaryNav li {
+  display: block;
+}
+#primaryNav.hide {
+  position: relative;
+}
+#primaryNav.hide li a {
+  display: block;
+}
+nav ul.hide {
+  display: none;
+}
+nav ul {}
+nav ul li {}
+nav ul li a {
+  color: white;
+}
+nav ul li.active a {}
+nav ul li a:hover {}
+
+main {}
+main h2 {}
+main figure { margin: 0 0 .2rem 2%; width:96%; }
+main figure img { width: 100%;
+}
+main section.gallery div {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+section {}
+section.forecast {
+	display: none;
+}
+
+article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+  width: 90%; /* fill the page in the small/phone view */
+  margin: auto;
+  display: block;
+}
+
+footer {}
+footer aside {}
+footer>p {} /* This structure refers to p elements that are direct children of the footer element */
+
+/* Other Class Selectors */

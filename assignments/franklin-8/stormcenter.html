@@ -32,7 +32,52 @@
       </ul>		
     </nav>
     <main>
-      
+      <form action="" method="post" enctype="multipart/formdata" name="stormform" id="stormcenter">
+
+        <fieldset>
+          <legend><span>Personal Information</span></legend>
+          <label><span>Full Name:</span><input type="text" name="fullname" placeholder="Full Name" pattern="[a-zA-z]{5,99} -._" required></label>
+          <label><span>Email:</span><input type="email" name="email" placeholder="zen@gmail.com" required></label>
+          <label><span>Phone Number:</span><input type="tel" name="phone" placeholder="1235551234" pattern="[0-9]{10,20} -()" required></label>
+          <label><span>Zip Code:</span><input type="number" name="zipcode" placeholder="00000" autocomplete="off"></label>
+        </fieldset>
+
+        <fieldset>
+          <legend><span>Storm Information</span></legend>
+          <label><span>Storm Date:</span><input type="date" name="date" required></label>
+          <label>
+            <span>Storm Type:</span>
+            <input type="text" name="stormType" list="storms" required>
+            <datalist id="storms">
+              <option value="Flash Flood"></option>
+              <option value="Hail"></option>
+              <option value="Hurricane"></option>
+              <option value="Thunderstorm"></option>
+              <option value="Tornado"></option>
+            </datalist>
+          </label>
+          <label><span>Storm Severity:</span><input type="range" name="stormrange" min="1" max="10" required></label>
+          <label>
+            <span>Storm Region:</span>
+            <select name="region" required>
+              <option value="select" disabled selected>Select Region</option>
+              <option value="franklin">Franklin</option>
+              <option value="greenville">Greenville</option>
+              <option value="springfield">SpringField</option>
+            </select>
+          </label>
+          <label>
+            <span>Are you in danger?</span>
+            <input type="radio" name="danger" value="yes" checked>Yes<br>
+            <input type="radio" name="danger" value="no">No<br>
+            <input type="radio" name="danger" value="maybe">Maybe<br>
+          </label>
+          <label><span>Additional Comments:</span><textarea rows="5" cols="60" name="comments"></textarea></label>
+        </fieldset>
+
+        <input type="submit" value="Submit" class="submitBtn">
+        <input type="hidden" name="redirect" value="thanks.html">
+      </form>
     </main>
     <footer>
       <aside>

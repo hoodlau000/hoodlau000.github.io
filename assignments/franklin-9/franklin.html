@@ -43,18 +43,15 @@
       <section>
         <h3>Weather Summary</h3>    
         <div class="highlow">
-          <p>High: 90&deg;F</p>  
-          <p>Low: 66&deg;F</p>  
+          <p>Current Weather: <span id="currentWeather">Missing</span></p>
+          <img src="" alt="current weather" id="weatherIcon">
         </div>
         <div class="current">
-          Sunny
-          <picture>
-              <img src="images/sunny-photo-100.jpg" alt="Picture of a sun, to represent sunny weather" width="150">
-          </picture>
+          <p>Current Temperature: <span id="currentTemp">Missing</span>&deg;</p>
         </div>   
         <div class="conditions">
-          <p>Precipitation: 0%</p>  
-          <p>Wind Speed: 5 mph SW</p>  
+          <p>Wind Speed: <span id="currentWS">Missing</span>mph</p>
+          <p><span id="textDesc"></span></p>
         </div>    
         <div class="windChill">
           <h3>Calculate Wind Chill</h3>
@@ -118,5 +115,6 @@
     <script src="js/hamburger.js"></script>
     <script src="js/currentdate.js"></script>
     <script src="js/windchill.js"></script>
+    <script src="js/wu-weather.js"></script>
   </body>
 </html>

@@ -38,7 +38,7 @@
           <img src="images/maintown-large100.jpg" alt="Photo overlooking a town with fields of grass and a blue sky" sizes="50vw" 
           srcset="images/maintown-small50.jpg 100w,
           images/maintown-medium80.jpg 500w,
-          images/maintown-large200.jpg 800w">
+          images/maintown-large100.jpg 800w">
         </section>
        <section id="townInfo">
 
@@ -76,7 +76,7 @@
           var myPara4 = document.createElement('p');
 
           myH2.textContent = townInfo[i].name;
-          myPara1.textContent = 'Motto: ' + townInfo[i].name;
+          myPara1.textContent = 'Motto: ' + townInfo[i].motto;
           myPara2.textContent = 'Year Founded: ' + townInfo[i].yearFounded;
           myPara3.textContent = 'Population: ' + townInfo[i].currentPopulation;
           myPara4.textContent = 'Average Rainfall: ' + townInfo[i].averageRainfall;

@@ -6,8 +6,14 @@
   #primaryNav li {
     display: block;
   }
+  #primaryNav li a {
+  border: solid 1px #0F309C;
+  padding-left: 1em;
+  padding-right: 1em;
+  }
   nav ul.hide {
-    display: block;
+    display: inline-flex;
+    flex-direction: row;
   }
   ul {
   	list-style-type: none;

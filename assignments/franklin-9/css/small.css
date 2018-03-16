@@ -15,12 +15,21 @@ header, nav, main, footer {
   /* Declare the maximum width and other main element rules to limit the stretch on wide views */
 }
 
-header {}
+header {
+  background-color: #D2DAF2;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
 header h1 {
   font-family: "Playfair Display", Palatino, serif;
 }
-header img {}
-header.subheading {}
+header img {
+  display: flex;
+
+}
+header.subheading {
+}
 
 nav {
   background-color: #2147C3;
@@ -31,6 +40,7 @@ nav button.hamburger {
   border: none;
   background-color: transparent;
   color: white;
+  padding-left: 1em;
 }
 #primaryNav {
   list-style: none;
@@ -49,12 +59,19 @@ nav button.hamburger {
 nav ul.hide {
   display: none;
 }
-nav ul {}
+nav ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center space-between;
+}
 nav ul li {}
 nav ul li a {
   color: white;
+  text-decoration: none;
 }
-nav ul li.active a {}
+nav ul li.active a {
+  background-color: #1F306A;
+}
 nav ul li a:hover {}
 
 main {

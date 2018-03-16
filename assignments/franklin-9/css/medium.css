@@ -31,8 +31,7 @@
   	width: 60%;
   	float:right; 
  	}  /* responsive images */
-  main section.gallery div {
-  display: grid;
+  main section.gallery {
   grid-template-columns: 1fr 1fr;
 }
 }

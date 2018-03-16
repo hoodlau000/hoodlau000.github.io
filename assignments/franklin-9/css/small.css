@@ -57,14 +57,21 @@ nav ul li a {
 nav ul li.active a {}
 nav ul li a:hover {}
 
-main {}
+main {
+  padding-top: 1em;
+}
 main h2 {}
 main figure { margin: 0 0 .2rem 2%; width:96%; }
 main figure img { width: 100%;
 }
-main section.gallery div {
+main section.gallery {
   display: grid;
+  width: 100%;
   grid-template-columns: 1fr;
+  grid-gap: 1em;
+}
+figure.gridSeg img:hover {
+box-shadow: 5px 5px 10px gray;
 }
 
 section {}

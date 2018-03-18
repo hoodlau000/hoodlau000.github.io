@@ -26,8 +26,8 @@ header h1 {
   font-size: 45px;
   display: flex;
   align-items: center;
-  padding-bottom: none;
-  margin-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
   padding-left: 10px;
 }
 header img {
@@ -88,7 +88,7 @@ nav ul.hide {
 nav ul {
   display: flex;
   flex-direction: column;
-  justify-content: center space-between;
+  justify-content: center;
 }
 nav ul li {}
 nav ul li a {
@@ -166,7 +166,6 @@ footer {
   bottom: -20px;
   clear: right;
   padding: 1px;
-  float: center;
 }
 footer aside {
 }

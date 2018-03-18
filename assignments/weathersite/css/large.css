@@ -1,0 +1,15 @@
+@media only screen and (min-width: 64em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+  
+  article p.town-article img { width: 50%; }
+  main section.gallery {
+  grid-template-columns: 2fr 2fr 2fr;
+}
+  section p#story {
+    display: flex;
+    align-items: center;
+  }
+	main section img:hover {
+		box-shadow: 5px 5px 10px gray;
+	}
+}

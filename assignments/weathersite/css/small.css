@@ -98,14 +98,42 @@ nav ul li a {
 nav ul li.active a {
   background-color: #1F306A;
 }
-nav ul li a:hover {}
+nav ul li a:hover {
+  background-color: #dadee7;
+  color: #1F306A;
+}
 
 main {
   padding-top: 1em;
 }
-main h2 {}
+main h2 {
+  font-size: 40px;
+text-align: center;
+}
 main figure { margin: 0 0 .2rem 2%; width:96%; }
 main figure img { width: 100%;
+}
+main table {
+  max-width: 900px;
+  margin: auto;
+  box-shadow: 10px 10px 20px gray;
+}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 8px;
+}
+table {
+  background-color: #dadee7;
+}
+h3#forecast {
+  text-align: center;
+}
+h3 {
+  padding-top: 1.5em;
+  font-size: 24px;
 }
 main section.gallery {
   display: grid;
@@ -127,7 +155,6 @@ article p.town-article img {  /* This structure refers to img elements that are 
   margin: auto;
   display: block;
 }
-
 footer {
   background-color: #dadee7;
   font-size: 15px;

@@ -4,11 +4,21 @@
 	<meta charset="UTF-8">
 	<title>Animated Menu</title>
 	<link rel="stylesheet" href="css/animatedMenu.css">
-	<script src="js/jquery-2.2.1.min.js"></script>
+	<script src="//code.jquery.com/jquery-2.2.1.min.js"></script>
 	<script>
 	$(function(){
 		// All jQuery code goes here
+		$('.navigation > li').hover(function(){
+			//executes when pointer is over list item
 
+			$(this).addClass('openSesame');
+
+		}, function(){
+			//executes when pointer leaves list item
+
+			$(this).removeClass('openSesame');
+
+		});
 	})
 	</script>
 </head>

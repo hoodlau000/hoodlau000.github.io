@@ -37,7 +37,7 @@
           </tr>
         </thead>
         <tbody>
-          
+
         </tbody>
       </table>
     </main>
@@ -48,7 +48,39 @@
       <p class="footer-bar">&copy;2017 All Rights Reserved | The Mountain Spoke | <span id="currentdate">Current Date Placeholder</span></p>
     </footer>
     <script>
-      
+      var tbody = document.querySelector('tbody');
+      var requestURL = 'https://hoodlau000.github.io/assignments/term-website-project/css/servicesdata.json';
+      var request = new XMLHttpRequest();
+      request.open('GET', requestURL);
+      console.log(request);
+      request.responseType = 'json';
+      request.send();
+      request.onload = function() {
+        var table = request.response;
+        //console.log(table);
+        showData(table);
+      }
+      function showData(jsonObj) {
+        //console.log(jsonObj);
+        var tableData = jsonObj['tabledata'];
+
+        for (var i = 0; i< tableData.length; i++) {
+          var myTr = document.createElement('tr');
+          var myTd1 = document.createElement('td');
+          var myTd2 = document.createElement('td');
+          var myTd3 = document.createElement('td');
+
+          myTd1.textContent = tableData[i].col1;
+          myTd2.textContent = tableData[i].col2;
+          myTd3.textContent = tableData[i].col3;          
+        }
+
+        myTr.appendChild(myTd1);
+        myTr.appendChild(myTd2);
+        myTr.appendChild(myTd3);
+
+        tbody.appendChild(myTr);
+      }
     </script>
   </body>
 </html>

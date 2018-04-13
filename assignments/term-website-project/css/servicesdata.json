@@ -1,0 +1,29 @@
+{
+	"tabledata" : [
+		{
+			"col1" : "Service",
+			"col2" : "Price",
+			"col3" : "Details"
+		}, 
+		{
+			"col1" : "Basic Tune-Up",
+			"col2" : "$60",
+			"col3" : "Adjusts all gears, brakes, hubs, and bearings"
+		}
+		{
+			"col1" : "Flat Tire Repair",
+			"col2" : "$8-$12/wheel",
+			"col3" : "$8 for front tire, $10 for rear tire, $12 for 3 speed wheel"
+		}
+		{
+			"col1" : "New Brake Pad Installation",
+			"col2" : "$12",
+			"col3" : "Replaces old brake pads with new ones"
+		}
+		{
+			"col1" : "Rotor Installation",
+			"col2" : "$6",
+			"col3" : "Removes old rotor and installs new one"
+		}
+	]
+}

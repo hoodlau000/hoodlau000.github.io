@@ -64,7 +64,7 @@
         //console.log(jsonObj);
         var tableData = jsonObj['tabledata'];
 
-        for (var i = 0; i< tableData.length; i++) {
+        for (var i = 0; i < tableData.length; i++) {
           var myTr = document.createElement('tr');
           var myTd1 = document.createElement('td');
           var myTd2 = document.createElement('td');
@@ -72,14 +72,14 @@
 
           myTd1.textContent = tableData[i].col1;
           myTd2.textContent = tableData[i].col2;
-          myTd3.textContent = tableData[i].col3;          
+          myTd3.textContent = tableData[i].col3;    
+
+          myTr.appendChild(myTd1);
+          myTr.appendChild(myTd2);
+          myTr.appendChild(myTd3);
+
+          tbody.appendChild(myTr);      
         }
-
-        myTr.appendChild(myTd1);
-        myTr.appendChild(myTd2);
-        myTr.appendChild(myTd3);
-
-        tbody.appendChild(myTr);
       }
     </script>
   </body>

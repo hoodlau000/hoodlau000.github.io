@@ -1,1 +1,8 @@
 /* Default css files */
+*{
+	box-sizing: border-box;	
+}
+header, nav, main, footer {
+	max-width: 900px;
+	margin: auto;
+}

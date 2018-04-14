@@ -7,7 +7,7 @@
     <meta name="author" content="Lauren Hood">
     <meta name="description" content="The tours page for 'The Mountain Spoke' website, which details bicycle adventures provided by the Mountain Spoke company">
     <!-- external style references in the proper cascading order -->    
-    <link href="https://fonts.googleapis.com/css?family=Lato|Playfair+Display" rel="stylesheet">  <!-- Google API font reference -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">  <!-- Google API font reference -->
     <link href="css/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
     <link href="css/small.css" rel="stylesheet">    <!-- default styles - small/phone views -->
     <link href="css/medium.css" rel="stylesheet">  <!-- medium/tablet views -->
@@ -35,20 +35,24 @@
         srcset="images/tourpage1-50.jpg 100w,
         images/tourpage1-80.jpg 500w,
         images/tourpage1-100.jpg 800w">
+        <div id="tour1">
         <h2>Sunrise Tour</h2>
         <p>Skill Level: Beginner<br>
           Cost: $40/person, $15 for children under 8<br>
           Location: East Gallatin Recreation Area<br>
           Length: (placeholder)<br>
           Details: Starting in the early morning, this tour runs along the trail surrounding the East Gallatin Recreation Area. It features an easy and accessible ride for beginners, as well as a scenic route featuring the sunrise. This short and affordable tour offers a great introductory experience to biking. A perfect activity for couples, friends, and family!</p>
+        </div>
       </section>
       <section class="tour2">
+        <div id="tour2">
         <h2>Mountain Tour</h2>
         <p>Skill Level: Experienced<br>
           Cost: $65/person<br>
           Location: College M Trailhead and Picnic Area<br>
           Length: (placeholder)<br>
           Details: This tour is perfect for more experienced bikers, while boasting a substanstial (but not too long) ride through the Baldy Mountain of Bridger Range, Montana. Following the "Trail to 'M'", this ride takes a pit stop in the scenic College 'M', allowing riders to rest and enjoy the scenery.</p>
+        </div>
           <img src="images/tour2-100.jpg" alt="This photograph features a main standing next to his bike on an elevated piece of land. He is overlooking some mountain ranges." sizes="50vw"
           srcset="images/tourpage2-50.jpg 100w,
           images/tourpage2-80.jpg 500w, 
@@ -61,5 +65,26 @@
       </aside>
       <p class="footer-bar">&copy;2017 All Rights Reserved | The Mountain Spoke | <span id="currentdate">Current Date Placeholder</span></p>
     </footer>
+    <script src="js/hamburger.js"></script>
+    <script src="js/currentdate.js"></script>
+    <script>
+    //remember to add ID of "mainmenu" to the nav ul
+    var urlString = document.location.href;
+    var urlArray = urlString.split('/');
+    var pageHREF = urlArray[urlArray.length-1];
+
+    if (pageHREF !=="") {
+      var menu = document.querySelectorAll('ul#primaryNav li a');
+      var i;
+      //loop through all the menu items in the navigation
+      for(i=0; i<menu.length; i++) {
+        var currentURL=(menu[i].getAttribute("href"));
+        menu[i].parentNode.className=""; //turn off highlighting by default
+        if (currentURL===pageHREF) {
+          menu[i].parentNode.className="active"; //turn on if a match
+        } //end if
+      } //end search for match
+    } //end of if!==
+  </script>
   </body>
 </html>

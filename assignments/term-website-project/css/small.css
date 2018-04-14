@@ -1,8 +1,205 @@
 /* Default css files */
 *{
 	box-sizing: border-box;	
+	max-width: 900px;
+	margin: auto;
+}
+body {
+	font-size: 15px;
+	font-family: "Open Sans", Arial, sans-serif;
+}
+header img {
+	position: relative;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+header h1 {
+	display: flex;
+	justify-content: flex-end;
+	position: absolute;
+	top: 5px;
+	left: 55%;
+	color: white;
+	font-size: 15px;
 }
 header, nav, main, footer {
 	max-width: 900px;
 	margin: auto;
+}
+nav button.hamburger {
+	display: block;
+	position: relative;
+	border: none;
+	background-color: transparent;
+	color: white;
+}
+nav ul.hide {
+	display: none;
+}
+nav {
+	background-color: #78B072;
+	margin-bottom: 2em;
+	margin-top: 0;
+	padding-top: 0;
+}
+nav ul {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+nav ul li a {
+	color: white;
+	text-decoration: none;
+}
+nav ul li.active a {
+	background-color: #36762F;
+}
+nav ul li a:hover {
+	color: #1E5E17;
+}
+#primaryNav.hide {
+	position: relative;
+}
+#primaryNav.hide li a {
+	display: block;
+}
+#primaryNav {
+	list-style: none;
+	padding-left: 0;
+	text-decoration: none;
+}
+#primaryNav li {
+	display: block;
+}
+figure.bikingphoto1 {
+	width: 45%;
+	margin: 1%;
+	display: inline-block;
+	padding: none;
+	margin-right: none;
+}
+section.mainCall {
+	width: 45%;
+	margin: 1px;
+	display: inline-block;
+	padding: none;
+}
+figure.bikingphoto2 {
+	display: none;
+}
+section.mainSection {
+	margin-bottom: 2em;
+}
+section.about {
+	margin-left: 10%;
+	margin-right: 10%;
+	text-align: center;
+	margin-bottom: 2em;
+}
+section.salesCall img {
+	float: left;
+	width: 45%;
+}
+section.salesCall h3 {
+	width: 45%;
+	text-align: center;
+	font-size: 14px;
+}
+section.salesCall {
+	margin-bottom: 2em;
+}
+footer {
+	clear: left;
+	margin-top: 2em;
+	text-align: center;
+}
+section.tour1 img {
+	width: 45%;
+}
+div#tour1 {
+	width: 45%;
+	display: inline-block;
+	text-align: center;
+	margin-bottom: 5%;
+}
+section.tour2 img {
+	width: 45%;
+}
+div#tour2 {
+	width: 45%;
+	display: inline-block;
+	text-align: center;
+}
+main section.saleSection {
+	display: grid;
+	width: 100%;
+	grid-template-columns: 1fr;
+	grid-gap: 1em;
+}
+table {
+	background-color: #AAD2A6;
+}
+table, th, td {
+	border: 1px solid #54944D;
+	border-collapse: collapse;
+}
+main table {
+	max-width: 850px;
+	margin: auto;
+	box-shadow: 10px 10px 20px gray;
+}
+th, td {
+	padding: 8px;
+}
+section#contactInfo {
+	margin-top: 2em;
+	text-align: center;
+}
+form#eventReg {
+  margin: 1em 2%;
+}
+fieldset {
+  background-color: #AAD2A6;
+  border: #78B072 solid 2px;
+  border-radius: 1em;
+  margin: 1em 0;
+}
+legend {
+  color: white;
+  background-color: #36762F;
+  margin-left: 3%;
+  padding: .5em;
+  border: transparent;
+  border-radius: 1em;
+}
+legend span {
+  font-size: 1.1em;
+}
+label {
+  display: block;
+  margin: .2em;
+}
+label span {
+  display: block;
+  padding-top: .8em;
+  padding-bottom: .3em;
+}
+input.submitBtn {
+-webkit-appearance: none;
+color: white;
+background-color: #36762F;
+border: transparent;
+border-radius: 5px;
+width: 30%;
+font-size: 1.1em;
+padding: .5em;
+box-shadow: 3px 3px 10px #36762F;
+}
+textarea {
+  width: 75%;
+}
+footer {
+	background-color: #AAD2A6;
+	padding-top: 5px;
+	padding-bottom: 5px;
 }

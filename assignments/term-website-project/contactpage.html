@@ -7,7 +7,7 @@
     <meta name="author" content="Lauren Hood">
     <meta name="description" content="Contact page for 'The Mountain Spoke' website.">
     <!-- external style references in the proper cascading order -->    
-    <link href="https://fonts.googleapis.com/css?family=Lato|Playfair+Display" rel="stylesheet">  <!-- Google API font reference -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">  <!-- Google API font reference -->
     <link href="css/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
     <link href="css/small.css" rel="stylesheet">    <!-- default styles - small/phone views -->
     <link href="css/medium.css" rel="stylesheet">  <!-- medium/tablet views -->
@@ -30,7 +30,16 @@
       </ul>		
     </nav>
     <main>
-
+      <section class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2787.9316277662124!2d-111.09291154849541!3d45.67227287900139!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5345459ab72cb6df%3A0xbb98968f9648ea88!2s3950+Valley+Commons+Dr%2C+Bozeman%2C+MT+59718!5e0!3m2!1sen!2sus!4v1523663197197" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </section>
+      <section class="contactInfo">
+        <h2>Contact Us!</h2>
+        <h3>Email:</h3>
+        <p>zen@emal.com</p>
+        <h3>Phone:</h3>
+        <p>000-000-0000</p>
+      </section>
     </main>
     <footer>
       <aside>
@@ -38,5 +47,26 @@
       </aside>
       <p class="footer-bar">&copy;2017 All Rights Reserved | The Mountain Spoke | <span id="currentdate">Current Date Placeholder</span></p>
     </footer>
+    <script src="js/hamburger.js"></script>
+    <script src="js/currentdate.js"></script>
+    <script>
+    //remember to add ID of "mainmenu" to the nav ul
+    var urlString = document.location.href;
+    var urlArray = urlString.split('/');
+    var pageHREF = urlArray[urlArray.length-1];
+
+    if (pageHREF !=="") {
+      var menu = document.querySelectorAll('ul#primaryNav li a');
+      var i;
+      //loop through all the menu items in the navigation
+      for(i=0; i<menu.length; i++) {
+        var currentURL=(menu[i].getAttribute("href"));
+        menu[i].parentNode.className=""; //turn off highlighting by default
+        if (currentURL===pageHREF) {
+          menu[i].parentNode.className="active"; //turn on if a match
+        } //end if
+      } //end search for match
+    } //end of if!==
+  </script>
   </body>
 </html>
